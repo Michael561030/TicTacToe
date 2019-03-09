@@ -8,7 +8,6 @@ function buildField() {
         document.getElementById('game').innerHTML += '<div class="block"></div>'
         document.getElementById('whoismove').innerHTML='X move first'
     }
-    document.getElementById('game').innerHTML += '<canvas id="canvas"></canvas>'
 }
 
 //draw X or O
@@ -19,17 +18,20 @@ function drawTicTacToe() {
         if ((event.target.className == 'block') && (event.target.textContent == '')) {
            if (count % 2 == 0) {
                event.target.innerHTML = 'x';
-               document.getElementById('whoismove').innerHTML='O move next';
+               whoIsMove.innerHTML='O move next';
            }
-           else{
+           else {
                event.target.innerHTML = 'o';
-               document.getElementById('whoismove').innerHTML='X move next';
+               whoIsMove.innerHTML = 'X move next';
            }
-            count++;
+
+        count++;
 
         }
+
         checkWin()
         reset()
+        isDraw()
     }
 }
 // reset all fields
@@ -42,7 +44,7 @@ function reset(){
         count=0;
     }
 }
-
+// check all combinations for win
 function checkWin() {
 
 
@@ -80,9 +82,25 @@ function checkWin() {
 
 
 }
+//check all conditions for draw
+function  isDraw() {
+    let countX = 0;
+    let countO = 0;
+    for (let i=0; i<allblocks.length; i++){
+        if (allblocks[i].textContent == 'x'){
+            countX++
+        }
+        if (allblocks[i].textContent == 'o'){
+            countO++
+        }
+        if ((countX==5) & (countO==4)) whoIsMove.innerHTML='Draw'
+
+
+
+    }
+}
 
 drawTicTacToe()
-
 
 
 // let arrWinCase=[
