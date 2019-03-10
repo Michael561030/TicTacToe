@@ -7,6 +7,7 @@ body {
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
 }
 #canvas {
@@ -39,4 +40,51 @@ body {
     font-size: 30px;
     font-weight: bold;
 
+}
+.line {
+    width: 280px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+#firstHorizontalLine {
+    top: 46px;
+    left: 10px;
+}
+#secondHorizontalLine {
+    top: 146px;
+    left: 10px;
+}
+#thirdHorizontalLine {
+    top: 246px;
+    left: 10px;
+}
+#firstVerticalLine {
+    top: 146px;
+    left: -90px;
+    transform: rotate(90deg);
+}
+#secondVerticalLine {
+    top: 146px;
+    left: 10px;
+    transform: rotate(90deg);
+}
+#thirdVerticalLine {
+    top: 146px;
+    left: 110px;
+    transform: rotate(90deg);
+}
+#firstDiagonalLine {
+    width: 330px;
+    top: 150px;
+    left: -10px;
+    transform: rotate(45deg) scaleX(1.1);
+}
+#secondDiagonalLine {
+    width: 330px;
+    top: 150px;
+    left: -18px;
+    transform: rotate(-45deg) scaleX(1.1);
 }
