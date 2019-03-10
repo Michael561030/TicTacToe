@@ -1,6 +1,10 @@
 body {
     text-align: center;
 }
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url("15320.otf");
+}
 #game {
     width: 300px;
     height: 300px;
@@ -10,9 +14,6 @@ body {
     position: relative;
 
 }
-#canvas {
-    z-index: 2;
-}
 .block {
     width: 100px;
     height: 100px;
@@ -20,7 +21,7 @@ body {
     border: 1px solid #000;
     box-sizing: border-box;
     font-size: 60px;
-    font-family: "Courier New";
+    font-family: "Alte Haas Grotesk";
     line-height: 100px;
     text-transform: uppercase;
     color: #000;
@@ -34,9 +35,10 @@ body {
     border-radius: 20px;
     text-align: center;
     font-size: 20px;
-    margin-top: 100px;
+    background-color: #86dcdd;
+
 }
-#whoismove {
+#whomoves {
     font-size: 30px;
     font-weight: bold;
 
