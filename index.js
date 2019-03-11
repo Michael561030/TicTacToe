@@ -18,7 +18,7 @@ function buildField() {
     for (let index =0; index<9; index++){
         game.innerHTML += '<div class="block"></div>';
     }
-    whoMoves.innerHTML='X move first';
+    whoMoves.innerHTML='X moves first';
 }
 
 // reset all fields
@@ -33,7 +33,7 @@ function reset(){
             line[i].style.display='none';
         }
         //info fields who moves first
-        whoMoves.innerHTML='X move first';
+        whoMoves.innerHTML='X moves first';
         count=0;
     }
 }
@@ -83,7 +83,7 @@ function  isDraw() {
 //write who is winner in info field
 function writeWinner() {
     if (checkWin(allBlocks).content === 'x' || checkWin(allBlocks).content === 'o'){
-        return whoMoves.innerHTML= checkWin(allBlocks).content.toUpperCase()+' won';
+        return whoMoves.innerHTML= checkWin(allBlocks).content.toUpperCase()+' has won';
     }
     if (!checkWin(allBlocks)) return;
 }
@@ -107,11 +107,11 @@ function drawTicTacToe() {
             if ((event.target.className === 'block') && (event.target.textContent === '')) {
                 if (count % 2 == 0 ) {
                     event.target.innerHTML = 'x';
-                    whoMoves.innerHTML='O move next';
+                    whoMoves.innerHTML='O moves next';
                 }
                 else {
                     event.target.innerHTML = 'o';
-                    whoMoves.innerHTML = 'X move next';
+                    whoMoves.innerHTML = 'X moves next';
                 }
                 count++;
             }
