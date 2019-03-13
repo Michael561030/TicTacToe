@@ -6,9 +6,9 @@ body {
     src: url("15320.otf");
 }
 #game {
-    width: 300px;
-    height: 300px;
-    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -41,10 +41,11 @@ body {
 #whomoves {
     font-size: 30px;
     font-weight: bold;
+    margin: 10px auto;
 
 }
 .line {
-    width: 280px;
+    width: 480px;
     height: 5px;
     background-color: #000;
     position: absolute;
@@ -63,30 +64,49 @@ body {
     top: 246px;
     left: 10px;
 }
+#fourthHorizontalLine{
+    top: 346px;
+    left: 10px;
+}
+#fifthHorizontalLine{
+    top: 446px;
+    left: 10px;
+}
 #firstVerticalLine {
-    top: 146px;
-    left: -90px;
+    top: 246px;
+    left: -190px;
     transform: rotate(90deg);
 }
 #secondVerticalLine {
-    top: 146px;
-    left: 10px;
+    top: 246px;
+    left: -90px;
     transform: rotate(90deg);
 }
 #thirdVerticalLine {
-    top: 146px;
+    top: 246px;
+    left: 10px;
+    transform: rotate(90deg);
+}
+#fourthVerticalLine{
+    top: 246px;
     left: 110px;
     transform: rotate(90deg);
 }
+#fifthVerticalLine{
+    top: 246px;
+    left: 210px;
+    transform: rotate(90deg);
+}
+
 #firstDiagonalLine {
-    width: 330px;
-    top: 150px;
+    width: 530px;
+    top: 250px;
     left: -10px;
-    transform: rotate(45deg) scaleX(1.1);
+    transform: rotate(45deg) scaleX(1.2);
 }
 #secondDiagonalLine {
-    width: 330px;
-    top: 150px;
-    left: -18px;
-    transform: rotate(-45deg) scaleX(1.1);
+    width: 530px;
+    top: 250px;
+    left: -10px;
+    transform: rotate(-45deg) scaleX(1.2);
 }
