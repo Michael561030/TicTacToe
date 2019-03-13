@@ -8,7 +8,7 @@ body {
 #game {
     width: 500px;
     height: 500px;
-    margin: 10px auto;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -105,8 +105,69 @@ body {
     transform: rotate(45deg) scaleX(1.2);
 }
 #secondDiagonalLine {
-    width: 531px;
+    width: 530px;
     top: 250px;
     left: -10px;
     transform: rotate(-45deg) scaleX(1.2);
+}
+@media screen and (max-width: 518px){
+    #game {
+        width: 350px;
+        height: 350px;
+        margin: 50px auto;
+    }
+    .block {
+        width: 70px;
+        height: 70px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .line {
+        width: 330px;
+    }
+    #firstHorizontalLine {
+        top: 34px;
+        left: 10px;
+    }
+    #secondHorizontalLine {
+        top: 104px;
+        left: 10px;
+    }
+    #thirdHorizontalLine {
+        top: 175px;
+        left: 10px;
+    }
+    #fourthHorizontalLine{
+        top: 245px;
+        left: 10px;
+    }
+    #fifthHorizontalLine{
+        top: 315px;
+        left: 10px;
+    }
+    #firstVerticalLine {
+        top: 170px;
+        left: -130px;
+        transform: rotate(90deg);
+    }
+    #secondVerticalLine {
+        top: 170px;
+        left: -60px;
+        transform: rotate(90deg);
+    }
+    #thirdVerticalLine {
+        top: 170px;
+        left: 10px;
+        transform: rotate(90deg);
+    }
+    #fourthVerticalLine{
+        top: 170px;
+        left: 80px;
+        transform: rotate(90deg);
+    }
+    #fifthVerticalLine{
+        top: 170px;
+        left: 150px;
+        transform: rotate(90deg);
+    }
 }

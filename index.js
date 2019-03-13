@@ -164,7 +164,6 @@ function drawTicTacToe() {
             }
             checkWinHorizontal(0,4,allBlocks);
             checkWinVertical(0,20,allBlocks);
-            checkWinDiagonal(0,24,allBlocks);
             writeWinner(checkWinHorizontal(0,4,allBlocks));
             writeWinner(checkWinVertical(0,20,allBlocks));
             drawWinLine();
