@@ -105,7 +105,7 @@ body {
     transform: rotate(45deg) scaleX(1.2);
 }
 #secondDiagonalLine {
-    width: 530px;
+    width: 531px;
     top: 250px;
     left: -10px;
     transform: rotate(-45deg) scaleX(1.2);
